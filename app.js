@@ -149,8 +149,49 @@ products[1].price = 5
 products.push({ name: 'Juice', price: 3 })
 //Use a for loop or forEach() to print every product in this format:
 products.forEach((product) => {
-    console.log(`${product.name} costs ${product.price} BD.`)
+    // console.log(`${product.name} costs ${product.price} BD.`)
 })
 
 ////////////////////////////////////////////////////////
-//Excercise 10
+//Excercise 10 Check the study group
+const studyGroup = {
+  name: 'JavaScript Crew',
+  members: [
+    { name: 'Aisha', completedHomework: true },
+    { name: 'Omar', completedHomework: false },
+    { name: 'Noor', completedHomework: true },
+  ],
+  addMember(member) {
+    studyGroup.members.push(member)
+  },
+};
+
+//Log the group name
+console.log(studyGroup.name)
+//Log the number of members.
+console.log(studyGroup.members.length)
+//Create a variable named completedCount, starting at 0
+let completedCount = 0
+//Loop through each member in the study group based on homework completion - if completed increase count / !completed print reminder message 
+studyGroup.members.forEach((member) => {
+    if (member.completedHomework===true) {
+        completedCount+=1 
+    } else {
+        console.log(`${member.name} needs to finish the homework.`)
+    }
+})
+console.log(`Completed homework ${completedCount}`)
+
+//Add a new member test
+// studyGroup.addMember({name: 'Ali', completedHomework: true}) // Completed homework
+// studyGroup.addMember({name: 'Hassan', completedHomework: false}) // Not completed homewokr
+
+//Test print to see if members added
+// studyGroup.members.forEach((member) => {
+//     if (member.completedHomework===true) {
+//         completedCount+=1 
+//     } else {
+//         console.log(`${member.name} needs to finish the homework.`)
+//     }
+// })
+// console.log(`Completed homework ${completedCount}`)
