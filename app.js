@@ -82,10 +82,31 @@ drink.size = 'Large'
 drink.price+=1
 drink.isAvailable=true
 delete drink.temporaryCode
-console.log(drink)
+// console.log(drink)
 
 ////////////////////////////////////////////////////////
-//Excercise 7 
+//Excercise 7: Check an order
+const order = {
+  customerName: 'Mariam',
+  itemName: 'Sandwich',
+  price: 4,
+  quantity: 3,
+  isPaid: true,
+};
+//Total Price Price * Qty
+let orderTotal = order.price*order.quantity
+
+//Print order object using template literal notation
+console.log(`${order.customerName} ordered ${order.quantity} ${order.itemName} items.`)
+console.log(`Order total: ${orderTotal}`)
+
+//If Statment to check payment status and log status message 
+if (order.isPaid===true) {
+    console.log('Ready to prepare')
+} else {
+    console.log('Waiting for payment')
+}
+
 
 ////////////////////////////////////////////////////////
 //Part 3: Arrays & Objects Together
