@@ -32,15 +32,26 @@ for (let i=0; i<drinks.length; i++) {
 ////////////////////////////////////////////////////////
 //Exercise 4: Calculate the prices
 const prices = [2, 5, 3, 6, 4]
-const totalPrice = 0
-const expensiveItemCount = 0
-//For Each Function
+let totalPrice = 0
+let expensiveItemCount = 0
+//For Each Loop/count Function
+// Use an array iteration method to loop through prices and calculate totals
 prices.forEach((price) => {
-    totalPrice += price
-    if (expensiveItemCount=(price>=4)) {
-        console.log(`Items costing 4 or more: 3' ${expensiveItemCount}`)
+    // Add current price to the running total
+    totalPrice += price  
+    if (price>=4) {
+        expensiveItemCount+=1
     }
 })
+prices.forEach(() => {
+
+})
+console.log(`Total Price: ${totalPrice}`)
+console.log(`Items costing 4 or more: ${expensiveItemCount}`)
+
+//Total price: 20
+// Items costing 4 or more: 3
+
 
 ////////////////////////////////////////////////////////
 //Excercise 5
