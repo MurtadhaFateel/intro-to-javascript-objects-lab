@@ -1,3 +1,4 @@
+//Part 1: Arrays
 // Excercise 1: Read the menu
 const menuItems = ['Tea', 'Coffe', 'Sandwich', 'Cookie']
 
@@ -40,22 +41,47 @@ prices.forEach((price) => {
     // Add current price to the running total
     totalPrice += price  
     if (price>=4) {
+        //Adds a counter based on how many (price>=4) it finds
         expensiveItemCount+=1
     }
 })
 prices.forEach(() => {
 
 })
-console.log(`Total Price: ${totalPrice}`)
-console.log(`Items costing 4 or more: ${expensiveItemCount}`)
+// console.log(`Total Price: ${totalPrice}`)
+// console.log(`Items costing 4 or more: ${expensiveItemCount}`)
 
 //Total price: 20
 // Items costing 4 or more: 3
 
 
 ////////////////////////////////////////////////////////
-//Excercise 5
+// Part 2: Objects
+//Excercise 5: Describe the café
+const cafe = {
+    name: 'Campus Café',
+    location: 'Building A',
+    seats: 24,
+    isOpen: true,
+}
+if(cafe.isOpen===true){
+    console.log(`${cafe.name} is located in ${cafe. location}.`)
+    console.log(`Available seats: ${cafe.seats}`)
+}
 
+/*
+Requirement: Build the messages using the object’s properties.
+
+Property	Value
+name	    'Campus Café'
+location	'Building A'
+seats	    24
+isOpen	    true
+
+Log
+Campus Café is located in Building A.
+Available seats: 24
+*/
 
 ////////////////////////////////////////////////////////
 //Excercise 6
@@ -63,3 +89,13 @@ console.log(`Items costing 4 or more: ${expensiveItemCount}`)
 
 ////////////////////////////////////////////////////////
 //Excercise 7 
+
+////////////////////////////////////////////////////////
+//Part 3: Arrays & Objects Together
+//Excercise 8
+
+////////////////////////////////////////////////////////
+//Excercise 9
+
+////////////////////////////////////////////////////////
+//Excercise 10
