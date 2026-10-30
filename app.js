@@ -65,27 +65,24 @@ const cafe = {
     isOpen: true,
 }
 if(cafe.isOpen===true){
-    console.log(`${cafe.name} is located in ${cafe. location}.`)
-    console.log(`Available seats: ${cafe.seats}`)
+    // console.log(`${cafe.name} is located in ${cafe. location}.`)
+    // console.log(`Available seats: ${cafe.seats}`)
 }
 
-/*
-Requirement: Build the messages using the object’s properties.
-
-Property	Value
-name	    'Campus Café'
-location	'Building A'
-seats	    24
-isOpen	    true
-
-Log
-Campus Café is located in Building A.
-Available seats: 24
-*/
-
 ////////////////////////////////////////////////////////
-//Excercise 6
+//Excercise 6: Update a drink
+const drink = {
+  name: 'Iced Coffee',
+  price: 3,
+  size: 'small',
+  temporaryCode: 'TEMP-01',
+};
 
+drink.size = 'Large'
+drink.price+=1
+drink.isAvailable=true
+delete drink.temporaryCode
+console.log(drink)
 
 ////////////////////////////////////////////////////////
 //Excercise 7 
