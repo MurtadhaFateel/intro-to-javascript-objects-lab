@@ -45,9 +45,7 @@ prices.forEach((price) => {
         expensiveItemCount+=1
     }
 })
-prices.forEach(() => {
 
-})
 // console.log(`Total Price: ${totalPrice}`)
 // console.log(`Items costing 4 or more: ${expensiveItemCount}`)
 
@@ -97,20 +95,42 @@ const order = {
 let orderTotal = order.price*order.quantity
 
 //Print order object using template literal notation
-console.log(`${order.customerName} ordered ${order.quantity} ${order.itemName} items.`)
-console.log(`Order total: ${orderTotal}`)
+// console.log(`${order.customerName} ordered ${order.quantity} ${order.itemName} items.`)
+// console.log(`Order total: ${orderTotal}`)
 
 //If Statment to check payment status and log status message 
 if (order.isPaid===true) {
-    console.log('Ready to prepare')
+    // console.log('Ready to prepare')
 } else {
-    console.log('Waiting for payment')
+    // console.log('Waiting for payment')
 }
 
 
 ////////////////////////////////////////////////////////
 //Part 3: Arrays & Objects Together
 //Excercise 8
+const studySession = {
+  title: 'JavaScript Practice',
+  room: 'Lab 2',
+  topics: ['Variables', 'Arrays'],
+};
+
+// Log the first topic
+// console.log(studySession.topics[0])
+//Add 'Objects' to the topics array using push()
+studySession.topics.push('Objects')
+//Log the number of topics
+// console.log(studySession.topics.length)
+//Use forEach() to print each topic.
+studySession.topics.forEach((topic) => {
+    // console.log(topic)
+})
+//Change room to 'Lab 3'
+studySession.room = 'Lab 3'
+//Use the studySession object to log:
+console.log(`${studySession.title} will take place in ${studySession.room}.`)
+// Log the topics. Expected topics after the update:
+console.log(studySession.topics)
 
 ////////////////////////////////////////////////////////
 //Excercise 9
