@@ -128,12 +128,29 @@ studySession.topics.forEach((topic) => {
 //Change room to 'Lab 3'
 studySession.room = 'Lab 3'
 //Use the studySession object to log:
-console.log(`${studySession.title} will take place in ${studySession.room}.`)
+// console.log(`${studySession.title} will take place in ${studySession.room}.`)
 // Log the topics. Expected topics after the update:
-console.log(studySession.topics)
+// console.log(studySession.topics)
 
 ////////////////////////////////////////////////////////
-//Excercise 9
+//Excercise 9: Manage the products
+const products = [
+  { name: 'Tea', price: 2 },
+  { name: 'Sandwich', price: 4 },
+  { name: 'Cookie', price: 1 },
+];
+
+//Log the name of the second product
+// console.log(products[1])
+//Change the second product’s price to 5
+products[1].price = 5
+// console.log(products[1])
+//Use push() to add this product
+products.push({ name: 'Juice', price: 3 })
+//Use a for loop or forEach() to print every product in this format:
+products.forEach((product) => {
+    console.log(`${product.name} costs ${product.price} BD.`)
+})
 
 ////////////////////////////////////////////////////////
 //Excercise 10
